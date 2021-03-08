@@ -107,6 +107,9 @@ a:hover {
   .typewriter h1 {
     /* font-size: 1rem; */
   }
+  .consoleList li {
+    margin-top: 5px;
+  }
 }
 @media only screen and (max-width: 560px) {
   .typewriter h1 {
