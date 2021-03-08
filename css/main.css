@@ -64,7 +64,6 @@ body {
 /* Main Content */
 #sideBar {
   padding: 3%;
-  z-index: 1;
 }
 #gameContent {
   padding: 3%;
