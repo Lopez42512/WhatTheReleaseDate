@@ -1,0 +1,48 @@
+body {
+    background-color: aqua;
+    text-align: center;
+    /* margin: 5%; */
+    text-align: center;
+}
+/* Header */
+#header {
+    border-bottom: 1px solid black;
+    padding: 5%;
+    background-color: aliceblue;
+}
+#coverImg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  animation: 3s ease 1s normal forwards 1 fadeOut;
+}
+@keyframes fadeOut {
+  from {opacity: 1; z-index: 1;}
+  to {opacity: 0; z-index: -1;}
+}
+
+.typewriter h1 {
+    overflow: hidden; 
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    font-family: 'DotGothic16', sans-serif;
+    animation: 
+      typing 5s steps(40, end),
+      blink-caret .75s step-end infinite;
+      animation-delay: 1.3s;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
