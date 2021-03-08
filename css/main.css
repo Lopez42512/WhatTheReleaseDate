@@ -1,8 +1,6 @@
 body {
-    background-color: aqua;
     text-align: center;
-    /* margin: 5%; */
-    text-align: center;
+    font-family: 'Oswald', sans-serif;
 }
 /* Header */
 #header {
@@ -25,7 +23,9 @@ body {
 }
 
 .typewriter h1 {
+    /* position: fixed; */
     overflow: hidden; 
+    text-align: center;
     border-right: .15em solid orange; 
     white-space: nowrap; 
     margin: 0 auto; 
@@ -46,3 +46,32 @@ body {
     from, to { border-color: transparent }
     50% { border-color: orange; }
   }
+
+/* Main Content */
+#sideBar {
+    height: 100vh;
+    border-right: 2px solid black;
+    padding: 3%;
+}
+#gameContent {
+    padding: 3%; 
+}
+.consoleList {
+    text-align: left;
+}
+.consoleList li {
+    margin-top: 30px;
+}
+.consoleList li:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: white;
+    cursor: pointer;  
+}

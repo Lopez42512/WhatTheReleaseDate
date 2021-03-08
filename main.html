@@ -10,27 +10,82 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
-    <script src="https://kit.fontawesome.com/7d2b110a1f.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/main.css">
+    <script
+      src="https://kit.fontawesome.com/7d2b110a1f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
     <title>Document</title>
   </head>
   <body>
-    
     <!-- <img id="coverImg" src="/images/The_Weeknd_-_Starboy.png" alt="" /> -->
     <section id="header">
-        <div class="container_fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="typewriter">
-                        <h1>What The Release Date! <i class="fas fa-gamepad"></i></h1>
-                    </div>
-                </div>
+      <div class="container_fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="typewriter">
+              <h1>What The Release Date! <i class="fas fa-gamepad"></i></h1>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-    
+    <section id="MainContent">
+      <div class="container_fluid">
+        <div class="row">
+          <div id="sideBar" class="col-lg-3 col-md-3 col-sm-12">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search For Game"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn btn-outline-secondary"
+                type="button"
+                id="button-addon2"
+              >
+                Search
+              </button>
+            </div>
+            <ul class="list-group list-group-flush consoleList">
+              <li class="list-group-item">
+                <a href="https://store.playstation.com/en-us/latest"
+                  >Playstation <i class="fab fa-playstation"></i
+                ></a>
+              </li>
+              <li class="list-group-item">
+                <a href="https://www.xbox.com/en-US/microsoft-store"
+                  >XBOX <i class="fab fa-xbox"></i
+                ></a>
+              </li>
+              <li class="list-group-item">
+                <a href="https://www.nintendo.com/games/sales-and-deals/">
+                  Nintendo <i class="fas fa-gamepad"></i>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a href="https://store.steampowered.com/">
+                  Steam <i class="fab fa-steam"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <div id="gameContent" class="col-lg-9 col-md-9 col-sm-12">
+            <h3><u>Games of March</u></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
