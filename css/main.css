@@ -13,7 +13,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 5;
   width: 100vw;
   height: 100vh;
   animation: 3s ease 1s normal forwards 1 fadeOut;
@@ -51,6 +51,7 @@ body {
 /* Main Content */
 #sideBar {
     padding: 3%;
+    z-index: 1;
 }
 #gameContent {
     padding: 3%; 
