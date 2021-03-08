@@ -49,12 +49,11 @@ body {
 
 /* Main Content */
 #sideBar {
-    height: 100vh;
-    border-right: 2px solid black;
     padding: 3%;
 }
 #gameContent {
     padding: 3%; 
+
 }
 .consoleList {
     text-align: left;
@@ -74,4 +73,30 @@ a {
 a:hover {
     color: white;
     cursor: pointer;  
+}
+.card {
+    margin: 50px auto;
+    width: 60%;
+
+}
+@media only screen and (min-width: 770px) {
+    #sideBar {
+        height: 100vh;
+    }
+}
+@media only screen and (max-width: 770px) {
+    .card {
+        margin: 50px auto;
+        width: 90%;
+    
+    }
+    .typewriter h1 {
+        /* font-size: 1rem; */
+    }
+}
+@media only screen and (max-width: 560px) {
+    
+    .typewriter h1 {
+        font-size: 1rem;
+    }
 }
