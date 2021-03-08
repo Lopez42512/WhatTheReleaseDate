@@ -38,8 +38,9 @@ body {
   margin: 0 auto;
   letter-spacing: 0.15em;
   font-family: "DotGothic16", sans-serif;
-  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 7s steps(40, end), blink-caret 0.75s step-end infinite;
   animation-delay: 1.3s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes typing {
