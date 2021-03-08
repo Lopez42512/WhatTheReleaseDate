@@ -1,13 +1,13 @@
 body {
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    background-color: whitesmoke;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  background-color: whitesmoke;
 }
 /* Header */
 #header {
-    /* border-bottom: 1px solid black; */
-    padding: 5%;
-    background-color: #f0f8ff;
+  /* border-bottom: 1px solid black; */
+  padding: 5%;
+  background-color: #f0f8ff;
 }
 #coverImg {
   position: fixed;
@@ -19,86 +19,98 @@ body {
   animation: 3s ease 1s normal forwards 1 fadeOut;
 }
 @keyframes fadeOut {
-  from {opacity: 1; z-index: 1;}
-  to {opacity: 0; z-index: -1;}
+  from {
+    opacity: 1;
+    z-index: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
 }
 
 .typewriter h1 {
-    /* position: fixed; */
-    overflow: hidden; 
-    text-align: center;
-    border-right: .15em solid orange; 
-    white-space: nowrap; 
-    margin: 0 auto; 
-    letter-spacing: .15em;
-    font-family: 'DotGothic16', sans-serif;
-    animation: 
-      typing 5s steps(40, end),
-      blink-caret .75s step-end infinite;
-      animation-delay: 1.3s;
+  /* position: fixed; */
+  overflow: hidden;
+  text-align: center;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  font-family: "DotGothic16", sans-serif;
+  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation-delay: 1.3s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
   }
-  
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+  to {
+    width: 100%;
   }
-  
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
   }
+  50% {
+    border-color: orange;
+  }
+}
 
 /* Main Content */
 #sideBar {
-    padding: 3%;
-    z-index: 1;
+  padding: 3%;
+  z-index: 1;
 }
 #gameContent {
-    padding: 3%; 
-
+  padding: 3%;
 }
 .consoleList {
-    text-align: left;
+  text-align: left;
 }
 .consoleList li {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 .consoleList li:hover {
-    background-color: blue;
-    color: white;
-    cursor: pointer;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
 }
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 a:hover {
-    color: white;
-    cursor: pointer;  
+  color: white;
+  cursor: pointer;
 }
 .card {
-    margin: 50px auto;
-    width: 60%;
-
+  margin: 50px auto;
+  width: 60%;
 }
 @media only screen and (min-width: 770px) {
-    #sideBar {
-        height: 100vh;
-    }
+  #sideBar {
+    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+  }
 }
 @media only screen and (max-width: 770px) {
-    .card {
-        margin: 50px auto;
-        width: 90%;
-    
-    }
-    .typewriter h1 {
-        /* font-size: 1rem; */
-    }
+  .card {
+    margin: 50px auto;
+    width: 90%;
+  }
+  .typewriter h1 {
+    /* font-size: 1rem; */
+  }
 }
 @media only screen and (max-width: 560px) {
-    
-    .typewriter h1 {
-        font-size: 1rem;
-    }
+  .typewriter h1 {
+    font-size: 1rem;
+  }
 }
